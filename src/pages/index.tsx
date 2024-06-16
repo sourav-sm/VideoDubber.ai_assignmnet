@@ -4,7 +4,7 @@ import { Slider } from "../components/Slider";
 export default function Home() {
   return (
     <main className={`flex flex-col items-center`}>
-      <h1 className="text-7xl  font-bold font-sans">GREAT VIDEOS START WITH A PLAN</h1>
+      <h1 className="text-2xl  font-bold font-sans md:text-7xl sm:text-5xl">GREAT VIDEOS START WITH A PLAN</h1>
       <div className="flex flex-row space-x-3">
            <h1>Try VEED with our</h1>
            <h1 className="cursor-pointer text-sky-400 mb-10">Free Plan</h1>

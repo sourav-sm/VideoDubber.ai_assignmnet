@@ -4,6 +4,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { useMantineColorScheme } from '@mantine/core';
 import Link from 'next/link'; 
 import { Menu } from '@mantine/core';
+import { BusinessCard } from '../BusinessCard';
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -108,18 +109,12 @@ export function HeaderMenu({ links }: HeaderMiddleProps) {
             {items}    
         </Group>
           <Group spacing={30} className={classes.social} position="center" >
-            <Link target="_blank" className='text-xl font-medium' href="https://twitter.com/Official_R_deep">
+            <Link target="_blank" className='text-xl font-medium' href="/">
               Book a Demo
             </Link>
-            <Link target="_blank" href="http://github.com/officialrajdeepsingh">
-              {/* <ActionIcon size="lg">Signup</ActionIcon> */}
               <button className='bg-white text-black px-3 py-2 rounded-3xl text-lg'>Login</button>
-            </Link>
-            <Link target="_blank" href="http://github.com/officialrajdeepsingh">
-              {/* <ActionIcon size="lg">Signup</ActionIcon> */}
-              <button className='bg-black text-white px-3 py-2 rounded-3xl text-lg'>Sign Up</button>
-            </Link>
-          </Group>
+            <button className='bg-black text-white px-3 py-2 rounded-3xl text-lg'>Sign Up</button>
+            </Group>
         </Group>
       </Container>
     </Header>

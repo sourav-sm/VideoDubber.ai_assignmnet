@@ -4,7 +4,7 @@ import { useLocalStorage } from '@mantine/hooks';
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
 import { HeaderMenu } from '@/components/Header/Header';
 
-let links = [ { link: "/", label: "Products" }, { link: "/about", label: "Use Cases" }, { link: "/contact", label: "Resources" },{ link: "/contact", label: "For Business" },{ link: "/contact", label: "Prcing" }];
+let links = [ { link: "/", label: "Products" }, { link: "/about", label: "Use Cases" }, { link: "/t", label: "Resources" },{ link: "/", label: "For Business" },{ link: "/", label: "Prcing" }];
 
 export default function App({ Component, pageProps }: AppProps) {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
